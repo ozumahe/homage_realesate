@@ -42,9 +42,6 @@ const Banner = ({
           <Text fontSize="3xl" color="white" fontWeight="bold">
             {title1} <br /> {title2}
           </Text>
-          <Text fontSize="2xl" paddingTop="3" paddingBottom="3" color={"white"}>
-            {desc1} <br /> {desc2}
-          </Text>
         </Box>
       </Box>
     </a>
