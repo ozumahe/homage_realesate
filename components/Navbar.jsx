@@ -18,7 +18,7 @@ import { FiKey } from "react-icons/fi";
 const Navbar = () => (
   <Flex p="3" borderBottom="1px" borderColor="gray.100">
     <Box fontSize="2xl" color="blue.400" fontWeight="bold">
-      <Link href="/">Company Name</Link>
+      <Link href="/">RealHome</Link>
     </Box>
     <Spacer />
     <Box>
