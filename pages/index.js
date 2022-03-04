@@ -15,31 +15,40 @@ const Banner = ({
   buttonText,
   imageUrl,
 }) => (
-  <Flex flexWrap="wrap" justifyContent="center" alignItems="center" m="10">
-    <Image src={imageUrl} width={500} height={300} alt="bannerImage" />
-    <Box p="5">
-      <Text color={"gray.500"} fontSize="sm" fontWeight="medium">
-        {purpose}
-      </Text>
-      <Text fontSize="3xl" fontWeight="bold">
-        {title1} <br /> {title2}
-      </Text>
-      <Text fontSize="lg" paddingTop="3" paddingBottom="3" color={"gray.700"}>
-        {desc1} <br /> {desc2}
-      </Text>
-      <Button
-        fontSize="xl"
-        bg="blue.500"
-        padding="2"
-        border="none"
-        borderRadius="5"
-      >
-        <Link href={linkName}>
-          <a>{buttonText}</a>
-        </Link>
-      </Button>
-    </Box>
-  </Flex>
+  <Link href={linkName}>
+    <a>
+      <Box position="relative" height="300px" m="10">
+        <img
+          src={imageUrl}
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          alt="bannerImage"
+        />
+        <Box
+          position="absolute"
+          top="50%"
+          left="50%"
+          transform="translate(-50%, -50%)"
+        >
+          <Text
+            color={"gray.500"}
+            padding="5px"
+            bg="blue.100"
+            textAlign="center"
+            fontSize="xl"
+            fontWeight="medium"
+          >
+            {purpose}
+          </Text>
+          <Text fontSize="3xl" color="white" fontWeight="bold">
+            {title1} <br /> {title2}
+          </Text>
+          <Text fontSize="2xl" paddingTop="3" paddingBottom="3" color={"white"}>
+            {desc1} <br /> {desc2}
+          </Text>
+        </Box>
+      </Box>
+    </a>
+  </Link>
 );
 
 export default function Home({ propertyForRent, propertyForSale }) {
