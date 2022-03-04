@@ -34,13 +34,10 @@ const Banner = ({
             padding="5px"
             bg="blue.100"
             textAlign="center"
-            fontSize="xl"
+            fontSize="2xl"
             fontWeight="medium"
           >
             {purpose}
-          </Text>
-          <Text fontSize="3xl" color="white" fontWeight="bold">
-            {title1} <br /> {title2}
           </Text>
         </Box>
       </Box>
